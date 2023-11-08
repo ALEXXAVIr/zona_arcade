@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="game.jpg">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Videojuegos</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        button {
+            position: relative;
+            padding: 10px 15px;
+            border: none;
+            outline: none;
+            background: #1ebbe2;
+            color: rgb(251, 252, 250);
+            cursor: pointer;
+            transition: .5s;
+            overflow: hidden;
+        }
+        button:hover {
+            color: #fff;    
+
+        }
+        button span {
+            position: absolute;
+            background: #ffffff;
+            transition: .5s ;
+        }
+        button span:nth-child(1) {
+            width: 100%;
+            height: 1px;
+            top: 0;
+            left: -100%;
+        }
+        button span:nth-child(2) {
+            width: 100%;
+            height: 1px;
+            bottom: 0;
+            right: -100%;
+        } 
+        button span:nth-child(3) {
+            width: 1px;
+            height: 100%;
+            bottom: -100%;
+            left: 0;
+        }
+        button span:nth-child(4) {
+            width: 1px;
+            height: 100%;
+            top: 100%;
+            right: 0;
+        }
+        button:hover span:nth-child(1){
+            left: 0;
+        }
+        button:hover span:nth-child(2){
+            right: 0;
+        }
+        button:hover span:nth-child(3){
+            bottom: 0%;
+        }
+        button:hover span:nth-child(4){
+            top: 0;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 10vh;
+            display: flex;
+            justify-content: center;
+        }
+        .neon{
+            text-transform: uppercase;
+            font-size: 5rem;
+            cursor: pointer;
+            transition: .3s linear;
+            color: transparent;
+            -webkit-text-stroke: 2px red;
+            background-image: linear-gradient(to left,
+            red, rgb(226, 33, 33), black, rgb(35, 31, 31));
+            background-size: 200%;
+            -webkit-background-clip: text;
+            animation: move 30s linear infinite;
+        }
+        @keyframes move {
+            100% {
+                background-position: 200px 0;
+            }
+        }
+        .neon:hover {
+            color: red;
+            text-shadow: 0 0 10px rgba(255, 0, 0, .5),
+                         0 0 20px rgba(255, 0, 0, .5),
+                         0 0 40px rgba(255, 0, 0, .5),
+                         0 0 80px rgba(255, 0, 0, .5),
+                         0 0 160px rgba(255, 0, 0, .5),
+                         0 0 320px rgba(255, 0, 0, .5);
+                        
+        }
+        .enlace1 {
+            color: rgb(13, 15, 15);
+        }
+        .enlace {
+            color: rgb(102, 177, 211);
+        }
+        .juego {
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .imagen {
+            width: 200px;
+            height: 200px;
+            margin-right: 20px;
+        }
+        .informacion {
+            width: 50%;
+        }
+    </style>
+</head>
+<body background="fondo.jpg">
+    <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> 
+        <a href="https://www.instagram.com/_zona.arcade/ " target="_blank" class="enlace1">Instagram</a>  
+    </button>
+    <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span> 
+        <a href="https://www.facebook.com/profile.php?id=100064903505487" target="_blank" class="enlace1">Facebook</a>  
+    </button>
+    
+    <section class="container">
+        <h1 class="neon">Zona Arcade</h1>
+    </section>
+    <div class="juego">
+        <img class="imagen" src="gta.jpg" alt="Juego 1">
+        <div class="informacion">
+            <h2 >GTA V</h2>
+            <p>Se trata de una aventura de acción de mundo abierto con multitud de misiones en la que encarnamos a tres personajes distintos: Trevor, Michael y Franklin. Además, cuenta con GTA Online, el modo multijugador en lína de GTA 5. El juego sale a la venta el 17 de septiembre de 2013 para PS3 y Xbox 360, el 18 de noviembre de 2014 en PS4 y Xbox One y, por último, el 14 de abril de 2015 para PC.</p>
+            <p>Puntuación: 9/10</p>
+            <a href="https://store.steampowered.com/agecheck/app/271590/" target="_blank" class="enlace"> Descargar</a>
+        </div>
+    </div>
+    <div class="juego">
+        <img class="imagen" src="red.jpg" alt="Juego 2">
+        <div class="informacion">
+            <h2>Red Dead Redemption 2</h2>
+            <p>Red Dead Redemption 2 actúa como una precuela al primer Red Dead Redemption. Esta vez conoceremos todo lo que pasó la pandilla Van Der Linde antes de ser cazados por John Marston en 1911. Luego de un robo fallido en Blackwater, la pandilla iniciará su escape de la ley. Donde no solo conoceremos a nuestro protagonista, sino un diverso elenco de personajes que “crecerán” con nosotros, además de dejarnos ver un poco más del enigmático líder.</p>
+            <p>Puntuación: 8/10</p>
+            <a href="https://store.steampowered.com/agecheck/app/1174180/" target="_blank" class="enlace"> Descargar</a>
+        </div>
+    </div>
+    <div class="juego">
+        <img class="imagen" src="punk.jpg" alt="Juego 3">
+        <div class="informacion">
+            <h2>Cyberpunk 2077</h2>
+            <p>Cyberpunk 2077 se mueve con elegancia entre el RPG y el "sandbox". Tiene el esqueleto de un juego de rol clásico, desde la creación de personajes al sistema de misiones y progreso, pero las secuencias de acción están tan bien resueltas que se puede jugar casi como un juego de mundo abierto.</p>
+            <p>Puntuación: 10/10</p>
+            <a href="https://store.steampowered.com/agecheck/app/1174180/" target="_blank" class="enlace"> Descargar</a>
+        </div>
+</body>
+</html>
